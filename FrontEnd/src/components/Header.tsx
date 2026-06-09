@@ -2,7 +2,7 @@ import moni from "../assets/private/moni.png";
 
 export default function Header() {
   return (
-    <header className="mx-auto max-w-[430px]">
+    <div className="mx-auto max-w-[430px]">
       <div
         className="relative h-[190px] overflow-hidden bg-[#f8a29a] shadow-lg"
         style={{
@@ -28,12 +28,12 @@ export default function Header() {
 
         <div className="absolute left-[180px] top-[80px]">
           <div className="mt-1 inline-block border border-gray-300 bg-white px-3 py-1 shadow-sm">
-            <h1 className="text-[22px] font-bold tracking-[0.4em] text-[#ef8c63]">
+            <div className="text-[22px] font-bold tracking-[0.2em] text-[#ef8c63]">
               황무원졸업파티
-            </h1>
+            </div>
           </div>
         </div>
       </div>
-    </header>
+    </div>
   );
 }
