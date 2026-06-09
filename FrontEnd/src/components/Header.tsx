@@ -1,8 +1,10 @@
 import moni from "../assets/private/moni.png";
 
 export default function Header() {
+  const name = import.meta.env.VITE_NAME;
+
   return (
-    <div className="mx-auto max-w-[430px]">
+    <div className="mx-2 max-w-[430px]">
       <div
         className="relative h-[190px] overflow-hidden bg-[#f8a29a] shadow-lg"
         style={{
@@ -28,8 +30,8 @@ export default function Header() {
 
         <div className="absolute left-[180px] top-[80px]">
           <div className="mt-1 inline-block border border-gray-300 bg-white px-3 py-1 shadow-sm">
-            <div className="text-[22px] font-bold tracking-[0.2em] text-[#ef8c63]">
-              황무원졸업파티
+            <div className="text-[22px] font-bold tracking-[0.1em] text-[#ef8c63]">
+              {name}졸업파티
             </div>
           </div>
         </div>
