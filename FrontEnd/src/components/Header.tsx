@@ -31,7 +31,9 @@ export default function Header() {
         <div className="absolute left-[180px] top-[80px]">
           <div className="mt-1 inline-block border border-gray-300 bg-white px-3 py-1 shadow-sm">
             <div className="text-[22px] font-bold tracking-[0.1em] text-[#ef8c63]">
-              {name}졸업파티
+              <span>{name}졸업</span>
+              <span className="text-[3px] tracking-normal">예정</span>
+              <span>파티</span>
             </div>
           </div>
         </div>
