@@ -32,3 +32,4 @@ dist-ssr
 dev/
 
 src/assets/private/
+.env*.local

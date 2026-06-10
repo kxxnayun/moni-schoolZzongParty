@@ -1,3 +1,5 @@
+import Box from "./Box";
+
 export default function DdayBox() {
   const partyDate = new Date("2026-06-20");
 
@@ -9,18 +11,14 @@ export default function DdayBox() {
   );
 
   return (
-    <div className="w-[120px] ml-4 my-3 border border-[#efd6d6] bg-[#fafafa] p-2 shadow-sm">
-      <div className="mb-2 border-b border-[#e8cfcf] pb-1">
-        <div className="text-[12px] font-bold tracking-[0.15em] text-[#e58b5c]">
-          D-DAY
-        </div>
-      </div>
-
-      <div className="flex h-[60px] items-center justify-center">
-        <p className="text-xl font-bold">
-          {diffDay === 0 ? "D-DAY" : `D-${diffDay}`}
-        </p>
-      </div>
-    </div>
+    <Box
+      title="D-day"
+      className="w-[120px] ml-4 my-3 p-2"
+      contentClassName="flex h-[60px] items-center justify-center"
+    >
+      <p className="text-xl font-bold">
+        {diffDay === 0 ? "D-DAY" : `D-${diffDay}`}
+      </p>
+    </Box>
   );
 }
