@@ -1,4 +1,5 @@
 import moni from "../assets/private/moni.png";
+import FlyInImage from "./FlyInImage";
 
 export default function Header() {
   const name = import.meta.env.VITE_NAME;
@@ -16,10 +17,10 @@ export default function Header() {
           backgroundPosition: "0 0, 20px 20px",
         }}
       >
-        <img
+        <FlyInImage
           src={moni}
-          alt=""
           className="absolute left-[-10px] top-4 w-[200px]"
+          from={{ x: -250, y: -150, rotate: -25 }}
         />
 
         <div className="absolute left-[155px] top-[50px]">
