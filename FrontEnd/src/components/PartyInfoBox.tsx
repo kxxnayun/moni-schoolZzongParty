@@ -10,8 +10,8 @@ export default function PartyInfoBox() {
       className="w-[120px] ml-4 my-3 p-2"
       contentClassName="space-y-1 text-center text-[13px] text-[#4b3b3b]"
     >
-      <p>{date}</p>
-      <p>{place}</p>
+      <p>일시: {date}</p>
+      <p>장소: {place}</p>
     </Box>
   );
 }
