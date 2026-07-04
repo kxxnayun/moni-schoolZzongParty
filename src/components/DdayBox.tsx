@@ -17,7 +17,7 @@ export default function DdayBox() {
       contentClassName="flex h-[60px] items-center justify-center"
     >
       <p className="text-xl font-bold">
-        {diffDay === 0 ? "D-DAY" : `D-${diffDay}`}
+        {diffDay === 0 ? "D-DAY" : diffDay > 0 ? `D-${diffDay}` : `D+${-diffDay}`}
       </p>
     </Box>
   );
